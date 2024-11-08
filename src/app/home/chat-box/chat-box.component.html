@@ -1,0 +1,20 @@
+
+@for (message of messages; track $index) {
+  <div [ngClass]="message.isSend ? 'message-send' : 'message-recived'">
+    <ion-row>
+       <div style="display: flex; align-items: flex-start;">
+        <img *ngIf="!message.isSend" alt="logo" src="assets/allam.png" />
+        <p *ngIf="message.message" [innerHTML]="message.message | safe: 'html'"
+          [ngClass]="message.tags.length>0 ? 'mb0':''"></p>
+       </div>
+    </ion-row>
+    <ion-row lines="none" class="tag">
+      <ion-text *ngFor="let tag of message.tags; let i = index" class="badge-container">
+        <span>
+          {{ tag }}
+        </span>
+      </ion-text>
+    </ion-row>
+  </div>
+
+}

@@ -1,0 +1,59 @@
+:host {
+  background-color: black;
+}
+
+ion-header {
+  // border-radius: 0 0 20px 20px;
+  padding: 3% 3% 3% 35%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #606060;
+}
+
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+ion-avatar {
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+ion-label {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+ion-icon {
+  margin-left: auto;
+  align-self: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+ion-footer {
+  background-color: black
+}
+
+ion-content.chat-image::part(background) {
+  background-color: black;
+  background-image: url('../../assets//allam.png');
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.2;
+}
+ion-content.bg-black::part(background) {
+  background-color: black;
+  // opacity: 0.2;
+}
+

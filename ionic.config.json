@@ -1,0 +1,7 @@
+{
+  "name": "ALLAM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

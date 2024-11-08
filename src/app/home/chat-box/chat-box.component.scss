@@ -1,0 +1,84 @@
+.tag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+p {
+  font-size: 12px;
+  padding: 0;
+  line-height: 15px;
+  text-align: justify;
+}
+
+.badge-container {
+  margin: 10px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 5px 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.chat {
+  padding-left: 2%;
+}
+
+ion-row {
+  padding: 2px;
+}
+
+ion-row.tag {
+  padding-top: 0%;
+  margin: 0%;
+}
+
+.message-send {
+  margin: 2% 5% 0% 15% !important;
+  max-width: fit-content !important;
+  float: right;
+  clear: both;
+  border-radius: 25px;
+  background-color: #1f1f1f;
+
+  p {
+    color: white;
+    padding: 6px 5px 0px 5px;
+    margin: 8px;
+  }
+}
+.mb0{
+ margin-bottom: 0 !important;
+}
+.message-recived {
+  margin: 2%;
+  float: left;
+  clear: both;
+
+  p {
+    color: white;
+    padding: 5px 10px 5px 0px;
+    margin: 10px;
+  }
+}
+
+
+// .triangle {
+//   position: absolute;
+//   bottom: 5px;
+//   right: -15px;
+//   margin-top: 0;
+//   width: 0;
+//   height: 0;
+//   border-top: 5px solid transparent;
+//   border-left: 14px solid #e0e0e0;
+//   border-bottom: 5px solid transparent;
+// }
+img {
+  // margin-right: 8px;
+  max-width:  40px;
+  height: 40px;
+}

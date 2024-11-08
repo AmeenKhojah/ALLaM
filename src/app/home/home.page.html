@@ -1,0 +1,18 @@
+<ion-header>
+  <div class="header-content">
+    <ion-avatar>
+      <img alt="logo" src="assets/allam.png" />
+    </ion-avatar>
+    <ion-label>ALLAM</ion-label>
+    <ion-icon name="create-outline" class="chat-clear" (click)="clearChat()" slot="end" ></ion-icon>
+  </div>
+</ion-header>
+
+
+<ion-content [ngClass]="{'chat-image': messages.length == 0, 'bg-black': messages.length > 0}">
+  <app-chat-box></app-chat-box>
+</ion-content>
+
+<ion-footer>
+  <app-chat-input></app-chat-input>
+</ion-footer>

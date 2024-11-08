@@ -1,0 +1,71 @@
+<ion-row lines="none" *ngIf="tags.length>0 || isAddingTag" class="chat">
+  <ion-input *ngIf="isAddingTag"
+  (focusout)="onFocusOut()"
+  [(ngModel)]="newTag" placeholder="Search..."
+  (keydown)="handleKeyDown($event)"
+  #input
+    class="tag-input">
+  </ion-input>
+  <ion-row lines="none" class="tags-container">
+    <ion-text *ngFor="let tag of tags; let i = index" class="badge-container">
+      <span>
+        {{ tag }}
+        <ion-badge fill="clear" (click)="removeTag(i)" class="close-button">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-badge>
+      </span>
+    </ion-text>
+  </ion-row>
+</ion-row>
+
+<ion-img *ngIf="isLoading" src="assets/typing.gif" alt="Loading"></ion-img>
+
+<ion-row class="inputs">
+  <ion-input class="send" [(ngModel)]="promptText" (keydown)="sendOnEnter($event)" placeholder="Type Here..."
+    shape="round" fill="outline">
+    <ion-text slot="start">
+      <ion-icon class="addIcone" id="open-modal" name="add-outline" size="large"></ion-icon>
+      <ion-icon class="tag-button"
+       (click)="toggleTagInput()" name="pricetags-outline" size="large"></ion-icon>
+    </ion-text>
+    <ion-icon slot="end" (click)="send()" name="send-outline" size="large" [ngClass]="{'disabled-icon': isLoading}">
+      ></ion-icon>
+  </ion-input>
+</ion-row>
+
+
+
+<ion-modal #modal trigger="open-modal">
+  <ng-template>
+    <ion-content>
+      <ion-toolbar>
+        <ion-title>Default Prompts</ion-title>
+        <ion-buttons slot="end">
+          <ion-button color="light" (click)="modal.dismiss()">
+            <ion-icon name="close-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+      <div class="defult-questions">
+        @for (question of defaultQuestions; track $index) {
+        <ion-row class="question" [ngClass]="{ 'selected': question.isSelect }" (click)="toggleSelect($index)">
+          <ion-text>
+            <span>
+              {{question.question}}
+            </span>
+            <ion-badge fill="clear" *ngIf="!question.isDefault" (click)="removePrompt($index)" class="trash-button">
+              <ion-icon name="trash-outline"></ion-icon>
+            </ion-badge>
+          </ion-text>
+        </ion-row>
+        }
+      </div>
+    </ion-content>
+    <ion-footer>
+    <ion-input  [(ngModel)]="question" (keydown)="saveQuestion($event)"
+      placeholder="Add Prompt..." shape="round" fill="outline">
+      <ion-icon slot="end" (click)="savePrompt()" name="send-outline" size="large"></ion-icon>
+    </ion-input>
+    </ion-footer>
+  </ng-template>
+</ion-modal>

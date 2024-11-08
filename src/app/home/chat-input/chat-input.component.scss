@@ -1,0 +1,163 @@
+:host {
+  background-color: #020202;
+}
+
+.tags-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+ion-icon {
+  color: white !important;
+}
+
+.selected .trash-button ion-icon{
+  color:black !important;
+}
+
+ion-row.chat {
+  margin: 10px 20px;
+}
+
+ion-row.inputs {
+  background-color: #1f1f1f;
+  margin: 0 20px 20px 20px;
+  border-radius: 28px;
+}
+
+ion-input.send {
+  --placeholder-color: #ddd;
+  --color: #fff;
+  --padding-start: 10px;
+}
+
+.tag-input {
+  --placeholder-color: #ddd;
+  --padding-start: 10px;
+  --padding-end: 0;
+  border: none;
+  --border-radius: 5px;
+  --background: #1f1f1f;
+  color: white;
+  width: auto;
+  max-width: 90px;
+  min-height: 30px !important;
+  display: flex;
+  align-items: center;
+  font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+.badge-container {
+  position: relative;
+  margin: 5px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 8px;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  padding: 0;
+  color: white;
+  background: none !important;
+
+}
+
+
+.trash-button {
+  position: relative;
+  top: -13px;
+  right: -8px;
+  padding: 0;
+  color: white;
+  background: none !important;
+  z-index: 2;
+}
+
+.ion-valid.sc-ion-input-md-h {
+  --highlight-color: #1f1f1f !important
+}
+
+ion-img {
+  width: 70px;
+  padding-left: 25px;
+}
+
+::ng-deep .input-fill-outline.sc-ion-input-md-h .input-wrapper.sc-ion-input-md {
+  padding-right: 20px;
+  padding-left: 12px;
+  //  margin: 10px;
+}
+
+// ::ng-deep .native-input.sc-ion-input-md {
+//   padding-left: 2px !important;
+// }
+ion-icon.addIcone {
+  margin-right: 5px;
+}
+ion-icon.tag-button{
+  margin-top: 5px !important;
+}
+
+
+ion-modal {
+  --height: 65%;
+  --border-radius: 16px;
+  padding: 5%;
+}
+
+ion-modal::part(backdrop) {
+  background: #1f1f1f;
+  opacity: 1;
+}
+
+ion-modal ion-toolbar {
+  --background: #1f1f1f;
+  --color: white;
+  border-bottom: 1px solid #2e2c2c;
+}
+
+ion-modal ion-content {
+  --background: #4e4c4c;
+  --color: white;
+}
+
+.question {
+  background-color: #141414;
+  margin: 1% 5%;
+  padding: 2%;
+  border-radius: 20px;
+  max-width: fit-content !important;
+  float: right;
+  clear: both;
+  cursor: pointer;
+  text-align: justify;
+}
+.selected {
+  background-color: #d3d3d3;
+  color: #1f1f1f;
+}
+ion-footer {
+  background: #2e2d2d;
+  ion-input{
+    padding: 5% !important;
+    color: white;
+    // clear: both;
+  }
+}
+.defult-questions {
+  overflow-y: auto;
+  max-height: 250px;
+  padding: 10px;
+}
+.disabled-icon {
+  opacity: 0.5;
+  pointer-events: none;
+}
