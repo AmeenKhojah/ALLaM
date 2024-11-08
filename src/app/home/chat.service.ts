@@ -9,7 +9,7 @@ import { Preferences } from '@capacitor/preferences';
 })
 export class ChatService {
   private messagesSubject = new BehaviorSubject<any[]>([]);
-
+  
   messages$ = this.messagesSubject.asObservable();
 
   public tokenUrl = 'https://us-central1-cognitalk.cloudfunctions.net/GetToken';
