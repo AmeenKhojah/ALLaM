@@ -26,3 +26,4 @@ Following Steps to create apk file
 ![alt text](image.png)
 
 7- after making any chnage into a project before to rebuild have to sync with this command 'ionic cap sync'
+"# ALLaMChallenge" 
