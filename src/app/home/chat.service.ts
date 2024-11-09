@@ -80,7 +80,7 @@ async showToken(){
       .map(str => `${str} filter:hashtags`);
     let param = {
       "includeSearchTerms": false,
-      "maxItems": 100,
+      "maxItems": 1000,
       "onlyImage": false,
       "onlyQuote": false,
       "onlyTwitterBlue": false,
