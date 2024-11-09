@@ -1,17 +1,20 @@
-Setup Node environment 
- install node version 20 or greater
+//Install node - v20.xx.x
+//Install Android Studio
+//Install VSCode - Coding Platform
 
-Setup Angular CLI
+//Open CMD
 
 npm install -g @angular/cli
 
-//Setup Ionic 
+//Open CMD
 
 npm install -g @ionic/cli
-(ng v)
-//Remove packagelock.json
-//Click terminal
-npm install --force (inside terminal)
+ng v
+
+//Top Menu --> Click Terminal --> Follow the following steps:
+
+npm install --force
+
 ionic serve
 
 Following Steps to create apk file
@@ -23,8 +26,3 @@ Following Steps to create apk file
 5.after adding android on capacitor to make it running on android run command 'ionic cap open android'
 6.open project in android studio go into build menu select Build/app Bundle(s)/APK(s) and click on Build APK
 
-![alt text](image.png)
-
-7- after making any chnage into a project before to rebuild have to sync with this command 'ionic cap sync'
-"# ALLaMChallenge" 
-"# ALLaMChallenge" 
