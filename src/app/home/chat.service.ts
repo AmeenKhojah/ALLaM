@@ -80,7 +80,7 @@ async showToken(){
       .map(str => `${str} filter:hashtags`);
     let param = {
       "includeSearchTerms": false,
-      "maxItems": 1000,
+      "maxItems": 7000,
       "onlyImage": false,
       "onlyQuote": false,
       "onlyTwitterBlue": false,
@@ -88,7 +88,7 @@ async showToken(){
       "onlyVideo": false,
       "searchTerms": tags,
       "sort": "Top",
-      "tweetLanguage": "en"
+      "tweetLanguage": "ar"
     }
     return this.http.post(this.apifyURL, param);
   }
