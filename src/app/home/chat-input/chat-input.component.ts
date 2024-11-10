@@ -35,6 +35,8 @@ export class ChatInputComponent implements OnInit {
         this.defaultQuestions = [
           { isDefault: true, isSelect: false, question: 'اريد منك تحسينات ومقترحات بناء على الاراء. اريدك ان تذكر 5 اراء الاكثر تكرارا بناء على السياق. اريد حصر الاراء السلبية. سوف اقدم لك عدد من الاراء في موضوع معين. عندما تقدم النتائج اريدك ان تجعلها بهذا الشكل:\n\nالأراء السلبية الأكثر تكرارا:\n1-\n2-\n3-\n\n(هنا ستكتب المقترحات لتحسين الاراء)' },
           { isDefault: true, isSelect: false, question: 'اريد منك تحسينات ومقترحات بناء على الاراء. اريدك ان تذكر 5 اراء الاكثر تكرارا بناء على السياق. اريد حصر الاراء السلبية. سوف اقدم لك عدد من الاراء في موضوع معين. عندما تقدم النتائج اريدك ان تجعلها بهذا الشكل:\n\nالأراء السلبية الأكثر تكرارا:\n1-\n2-\n3-\n\n(هنا ستكتب المقترحات لتحسين الاراء)\n\nاذا لم تكن توجد اراء سلبية اريدك ان تجعلها بهذا الشكل: (لا توجد اراء سلبية) ثم ستكتب المقترحات بناء على الاراء العامة المستخرجة' },
+          { isDefault: true, isSelect: false, question: 'I want improvements and suggestions based on the feedback. I would like you to identify the 5 most repeated opinions based on the context. I want you to focus on the negative feedback specifically. I will provide you with a number of opinions on a certain topic. When presenting the results of the most repeated negative feedback, I would like it to be structured as follows: Most repeated negative opinions: 1. 2. 3. (Here you will write the suggestions to improve these opinions.) If there are no frequently repeated negative opinions based on the context, then you will only provide general improvements and suggestions.' },
+
         ];
       }
 

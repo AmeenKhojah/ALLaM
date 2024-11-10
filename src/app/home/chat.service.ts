@@ -88,7 +88,7 @@ async showToken(){
       "onlyVideo": false,
       "searchTerms": tags,
       "sort": "Top",
-      "tweetLanguage": "ar"
+      "tweetLanguage": "en"
     }
     return this.http.post(this.apifyURL, param);
   }
